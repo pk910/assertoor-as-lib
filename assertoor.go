@@ -10,6 +10,7 @@ import (
 	"github.com/ethpandaops/assertoor/pkg/coordinator/names"
 	"github.com/ethpandaops/assertoor/pkg/coordinator/scheduler"
 	checkclientsarehealthy "github.com/ethpandaops/assertoor/pkg/coordinator/tasks/check_clients_are_healthy"
+	"github.com/ethpandaops/assertoor/pkg/coordinator/types"
 	"github.com/ethpandaops/assertoor/pkg/coordinator/vars"
 	"github.com/ethpandaops/assertoor/pkg/coordinator/wallet"
 	"github.com/sirupsen/logrus"
@@ -59,15 +60,13 @@ func main() {
 
 	// add some test tasks
 	// task 1: check_clients_are_healthy
-	_, err = taskScheduler.AddRootTask(taskScheduler.NewTaskOptions(
-		checkclientsarehealthy.TaskName,
-		checkclientsarehealthy.Config{
+	_, err = taskScheduler.AddRootTask(&types.TaskOptions{
+		Name: checkclientsarehealthy.TaskName,
+		Config: scheduler.GetRawConfig(&checkclientsarehealthy.Config{
 			PollInterval: human.Duration{Duration: 5 * time.Second},
-		},
-		&scheduler.TaskOptsSettings{
-			Timeout: human.Duration{Duration: 5 * time.Minute},
-		},
-	))
+		}),
+		Timeout: human.Duration{Duration: 5 * time.Minute},
+	})
 	if err != nil {
 		panic(fmt.Errorf("failed adding task 1 to scheduler: %w", err))
 	}

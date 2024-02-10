@@ -3,7 +3,7 @@ module github.com/pk910/assertoor-as-lib
 go 1.21.1
 
 require (
-	github.com/ethpandaops/assertoor v0.0.0-20240210231038-a11de63eb613
+	github.com/ethpandaops/assertoor v0.0.0-20240210235530-aeee3fd1355a
 	github.com/sirupsen/logrus v1.9.3
 )
 
