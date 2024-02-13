@@ -24,6 +24,7 @@ func main() {
 	if err != nil {
 		panic(fmt.Errorf("failed initializing client pool: %w", err))
 	}
+	defer clientPool.Close()
 
 	// add clients to pool
 	err = clientPool.AddClient(&clients.ClientConfig{

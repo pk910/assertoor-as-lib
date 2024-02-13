@@ -60,10 +60,8 @@ github.com/ethereum/c-kzg-4844 v0.4.0 h1:3MS1s4JtA868KpJxroZoepdV0ZKBp3u/O5HcZ7R
 github.com/ethereum/c-kzg-4844 v0.4.0/go.mod h1:VewdlzQmpT5QSrVhbBuGoCdFJkpaJlO1aQputP83wc0=
 github.com/ethereum/go-ethereum v1.13.8 h1:1od+thJel3tM52ZUNQwvpYOeRHlbkVFZ5S8fhi0Lgsg=
 github.com/ethereum/go-ethereum v1.13.8/go.mod h1:sc48XYQxCzH3fG9BcrXCOOgQk2JfZzNAmIKnceogzsA=
-github.com/ethpandaops/assertoor v0.0.0-20240210231038-a11de63eb613 h1:8K8FeB320Mfct8+3/EHtHpZPbmJq4XTUKpeUrhpMw/w=
-github.com/ethpandaops/assertoor v0.0.0-20240210231038-a11de63eb613/go.mod h1:WQeZXeA/beTdtURb9LxPK/e20Pf0OaJ7qJSL4eZQ6aw=
-github.com/ethpandaops/assertoor v0.0.0-20240210235530-aeee3fd1355a h1:QpV8Zb4Uq5TJ9NahX9/hc5eBB7u7swZ3KyO6ZtoMuWA=
-github.com/ethpandaops/assertoor v0.0.0-20240210235530-aeee3fd1355a/go.mod h1:WQeZXeA/beTdtURb9LxPK/e20Pf0OaJ7qJSL4eZQ6aw=
+github.com/ethpandaops/assertoor v0.0.0-20240213011328-63d71dfeeca2 h1:jrM253Q1rk+PbJldcg2o9VVtgBMPGmGvDokXLmxBtPk=
+github.com/ethpandaops/assertoor v0.0.0-20240213011328-63d71dfeeca2/go.mod h1:WQeZXeA/beTdtURb9LxPK/e20Pf0OaJ7qJSL4eZQ6aw=
 github.com/ethpandaops/ethwallclock v0.3.0 h1:xF5fwtBf+bHFHZKBnwiPFEuelW3sMM7SD3ZNFq1lJY4=
 github.com/ethpandaops/ethwallclock v0.3.0/go.mod h1:y0Cu+mhGLlem19vnAV2x0hpFS5KZ7oOi2SWYayv9l24=
 github.com/fatih/color v1.10.0/go.mod h1:ELkj/draVOlAH/xkhN6mQ50Qd0MPOk5AAr3maGEBuJM=
